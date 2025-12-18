@@ -1,0 +1,12 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <sys:String x:Key="STranslate_Plugin_Translate_Ali_Url">地址</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Translate_Ali_Info">介紹</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Translate_Ali_Info_Content">透過阿里翻譯 API 進行翻譯。</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Translate_Ali_AccessKeyID">AccessKeyID</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Translate_Ali_AccessKeySecret">AccessKeySecret</sys:String>
+
+</ResourceDictionary>

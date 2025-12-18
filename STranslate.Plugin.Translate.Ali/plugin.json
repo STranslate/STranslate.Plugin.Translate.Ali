@@ -1,0 +1,10 @@
+﻿{
+  "PluginID": "b450fbe2a6834358bcf9a18d6e60c613",
+  "Name": "Ali",
+  "Description": "Ali plugin for stranslate",
+  "Author": "zggsong",
+  "Version": "1.0.0",
+  "Website": "https://github.com/STranslate/STranslate.Plugin.Translate.Ali",
+  "ExecuteFileName": "STranslate.Plugin.Translate.Ali.dll",
+  "IconPath": "icon.png"
+}
