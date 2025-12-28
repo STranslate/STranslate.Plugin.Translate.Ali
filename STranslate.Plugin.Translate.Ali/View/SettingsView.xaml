@@ -20,7 +20,7 @@
             </ui:SettingsCard.HeaderIcon>
             <TextBox
                 MinWidth="300"
-                ui:ControlHelper.PlaceholderText="https://api.aliyun.com/product/alimt"
+                ui:ControlHelper.PlaceholderText="https://mt.cn-hangzhou.aliyuncs.com"
                 Text="{Binding Url}" />
         </ui:SettingsCard>
 

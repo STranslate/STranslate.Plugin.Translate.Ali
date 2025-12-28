@@ -2,7 +2,6 @@ using STranslate.Plugin.Translate.Ali.View;
 using STranslate.Plugin.Translate.Ali.ViewModel;
 using System.Text.Json.Nodes;
 using System.Windows.Controls;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace STranslate.Plugin.Translate.Ali;
 
@@ -12,8 +11,6 @@ public class Main : TranslatePluginBase
     private SettingsViewModel? _viewModel;
     private Settings Settings { get; set; } = null!;
     private IPluginContext Context { get; set; } = null!;
-
-    private const string Url = "https://mt.cn-hangzhou.aliyuncs.com";
 
     public override Control GetSettingUI()
     {
@@ -142,7 +139,7 @@ public class Main : TranslatePluginBase
         };
         formData["Signature"] = AliyunRpcSigner.Sign(formData, Settings.AccessKeySecret);
 
-        var response = await Context.HttpService.PostFormAsync(Url, formData, cancellationToken: cancellationToken);
+        var response = await Context.HttpService.PostFormAsync(Settings.Url, formData, cancellationToken: cancellationToken);
         var parsedData = JsonNode.Parse(response);
 
         var data = parsedData?["Data"]?["Translated"]?.ToString();
